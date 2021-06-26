@@ -6,6 +6,7 @@ import org.springframework.context.annotation.*;
 @ComponentScan(excludeFilters = @ComponentScan.Filter(type = FilterType.CUSTOM,
         classes = ComponentScanCustomFilter.class), basePackages = {"pl.sda"})
 @PropertySource("classpath:db.properties")
+@Import(DatabaseConfiguration.class)
 public class ApplicationConfiguration {
 
     @Bean

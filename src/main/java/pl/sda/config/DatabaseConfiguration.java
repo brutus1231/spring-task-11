@@ -12,7 +12,7 @@ public class DatabaseConfiguration {
     @Value("${db.password}")
     private String dbPassword;
 
-    @Value("${db.host}")
+    @Value("${db.hostname}")
     private String dbHost;
 
     @Value("${db.port}")
