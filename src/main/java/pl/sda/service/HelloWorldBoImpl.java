@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class HelloWorldBoImpl implements HelloWorldBo {
 
-    @Value("{db.username}")
+    @Value("${db.username}")
     private String dbUser;
 
     @Override
