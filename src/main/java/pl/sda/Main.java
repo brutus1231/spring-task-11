@@ -11,7 +11,8 @@ public class Main {
 
     public static void main(String[] args) {
         ApplicationContext context = new AnnotationConfigApplicationContext(ApplicationConfiguration.class);
-        System.out.println(Arrays.toString(context.getBeanDefinitionNames()));
+
+        Arrays.asList(context.getBeanDefinitionNames()).forEach(System.out::println);
 
         HelloWorldBo helloWorldBo = context.getBean(HelloWorldBo.class);
         helloWorldBo.printMessage("Marek");
