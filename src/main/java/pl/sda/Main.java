@@ -17,5 +17,6 @@ public class Main {
         HelloWorldBo helloWorldBo = context.getBean(HelloWorldBo.class);
         helloWorldBo.printMessage("Marek");
         helloWorldBo.printProperty();
+
     }
 }
