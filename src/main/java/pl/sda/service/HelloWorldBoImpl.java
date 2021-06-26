@@ -9,6 +9,9 @@ public class HelloWorldBoImpl implements HelloWorldBo {
     @Value("${db.username}")
     private String dbUser;
 
+    @Value("${db.password}")
+    private String dbPassword;
+
     @Override
     public void printMessage(String message) {
         System.out.println("Hello world " + message);
@@ -16,6 +19,6 @@ public class HelloWorldBoImpl implements HelloWorldBo {
 
     @Override
     public void printProperty() {
-        System.out.println(dbUser);
+        System.out.println("username: " + dbUser + " hasło: " + dbPassword);
     }
 }
